@@ -1,0 +1,25 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000P\u0000r\u0000o\u0000y\u0000e\u0000c\u0000t\u0000o\u0000F\u0000i\u0000n\u0000a\u0000l\u0000-\u0000H\u0000u\u0000r\u0000t\u0000a\u0000d\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/styles.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoAlejoGH/ProyectoFinal-Hurtado.git"
+  },
+  "author": "Alejandro Hurtado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YoAlejoGH/ProyectoFinal-Hurtado/issues"
+  },
+  "homepage": "https://github.com/YoAlejoGH/ProyectoFinal-Hurtado#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
