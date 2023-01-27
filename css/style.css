@@ -131,6 +131,14 @@ header{
 .sobre-informacion {
   background-color: white; }
 
+.sobre-info h2{
+  display: flex;
+  justify-content: center;}
+  .sobre-info p{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;}
+
 .info-img {
   display: flex;
   justify-content: center;
