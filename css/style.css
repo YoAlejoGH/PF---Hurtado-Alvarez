@@ -336,6 +336,10 @@ header{
     align-content: center;
     flex-direction: column;
     align-items: center; }
+  .columns {
+    display: flex; }
+  .presentaciondeservicio {
+    width: 45%; }
   .sobre-informacion {
     display: flex;
     align-items: center;
