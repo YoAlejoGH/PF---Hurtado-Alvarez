@@ -78,7 +78,6 @@ header{
 }
 
 .columns{
-  display: flex;
   flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -87,7 +86,6 @@ header{
   margin: 10px;
   border: #d4d4d4 solid;
   text-align: center;
-  width: 90vw;
     background-color: #f2f2f2;
 
 }
