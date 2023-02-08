@@ -1,3 +1,3 @@
 console.log("Hola Mundo");
 
-alert("Hola Gnete, bienvenidos a Inmobiliaria Hurtado");
+alert("Hola Gente, bienvenidos a Inmobiliaria Hurtado");
