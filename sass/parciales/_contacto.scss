@@ -1,0 +1,34 @@
+.contacto-inicio-bg{
+    background-image: url(/img/contacto/contacto-inicio.jpg);
+    padding: 300px 70px;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
+    h2{
+        display: flex;
+        font-size: 60px;
+        color: #f2f2f2;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.contacto-columns-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contacto-info{
+    display: flex;
+    width: 90vw;
+    height: 120px;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border: #cccccc solid;
+    margin-top: 10px;
+}

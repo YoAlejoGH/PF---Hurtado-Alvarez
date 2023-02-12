@@ -1,0 +1,143 @@
+@media (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top:70px;
+        left:-100%;
+        background: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav-menu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
+    }
+}
+
+@media screen and (min-width:768px){
+    .footer_container{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columns{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .presentaciondeservicio{
+        width: 47%;
+    }
+
+    .sobre-informacion{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        padding: 0 10px 0 10px;
+    }
+
+    .info-img img{
+        width: 48vw;
+    }
+
+    .sobre-info{
+        img{
+            width: 48vw;
+        }
+
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+
+        p{
+            padding-bottom: 20px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    .colums-trabajo{
+        width: 30vw;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .trabajo-info{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+        h2{
+            display: none;
+        }
+    }
+
+    .servicio-info{
+        display: flex;
+
+        h2{
+            margin-bottom: 20px;
+        }
+    }
+
+    .columns-servicio{
+        display: flex;
+        align-items: stretch;
+        flex-direction: row;
+        border: rgb(201, 201, 201) solid;
+        margin: 20px;
+
+        img{
+            width: 150px;
+            margin: 0;
+        }
+
+        h3{
+            margin:0;
+            margin-left: 10px;
+        }
+    }
+
+    .contacto-columns-info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contacto-info{
+        display: flex;
+        justify-content: center;
+        width: 33vw;
+        margin: 10px 20px 0 20px;
+    }
+
+
+}

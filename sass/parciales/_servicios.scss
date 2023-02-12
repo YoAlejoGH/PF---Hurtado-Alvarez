@@ -1,0 +1,49 @@
+.servicio-inicio-bg{
+    background-image: url(/img/servicio/servicio-inicio.jpg);
+    padding: 300px 70px;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
+    h2{
+        display: flex;
+        font-size: 60px;
+        color: #f2f2f2;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.servicio-info{
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+}
+
+.columns-servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    img{
+        width: 350px;
+        margin-bottom: 20px;
+    }
+
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+}

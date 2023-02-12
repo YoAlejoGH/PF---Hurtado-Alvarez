@@ -1,0 +1,44 @@
+.trabajo-inicio-bg{
+    background-image: url(/img/trabajo/trabajo-inicio.jpg);
+    padding: 300px 70px;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
+    h2{
+        display: flex;
+        font-size: 60px;
+        color: #f2f2f2;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.trabajo-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.colums-trabajo{
+    border: #cecece solid;
+    margin: 10px 20px;
+    background-color: rgb(229, 229, 229);
+
+    img{
+        width: 350px;
+    }
+
+    p{
+        padding: 20px;
+        text-align: center;
+    }
+}
