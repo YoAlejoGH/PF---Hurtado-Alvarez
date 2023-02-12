@@ -1,125 +1,86 @@
-*{
+.tienda_inmobiliaria {
+  background-color: aliceblue; }
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
-body{
-    background-color: #f2f2f2;
-}
+body {
+  background-color: #f2f2f2; }
 
-/*Color base #dab727*/
-
-/*Header*/
-
-header{
+header {
   background-color: #222;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-    padding: .5rem 2rem;
-}
+  padding: .5rem 2rem; }
 
-.logo-header img{
-    width: 50px;
-}
+.logo-header img {
+  width: 50px; }
 
-.nav-menu ul{
+.nav-menu ul {
   display: flex;
   align-items: center;
-    text-decoration: none;
-}
+  text-decoration: none; }
 
-.nav-menu li{
-    margin-right: 2rem;
-}
+.nav-menu li {
+  margin-right: 2rem; }
 
-.nav-menu a{
-    color: #fff;
-}
+.nav-menu a {
+  color: #fff; }
 
-.nav-menu li:last-child{
-    background:#4ad295;
+.nav-menu li:last-child {
+  background: #4ad295;
   padding: .25rem .75rem;
-    border-radius: .2rem;
-}
+  border-radius: .2rem; }
 
-.menu-icon img{
-    width: 30px;
-    height: 30px;
-    border-radius: 2px;
-}
+.menu-icon, #check {
+  display: none; }
 
-.menu-icon, #check{
-    display: none;
-}
-
-/*index*/
-
-.logoin{
+.logoin {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-    margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
-.presentacion{
+.presentacion {
   text-align: center;
   padding: 20px 50px;
   border: #222 solid;
   margin: 0px 50px;
-    margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
-.titulo{
-    margin: 10px;
-}
+.titulo {
+  margin: 10px; }
 
-.columns{
+.columns {
+  display: flex;
   flex-wrap: wrap;
-    justify-content: space-around;
-}
+  justify-content: space-around; }
 
-.presentaciondeservicio{
+.presentaciondeservicio {
   margin: 10px;
   border: #d4d4d4 solid;
   text-align: center;
-    background-color: #f2f2f2;
-
-}
-
-.imginicio{
-    width: 200px;
-}
-
-.presentaciondeservicio p{
+  width: 90%;
+  background-color: #f2f2f2; }
+  .presentaciondeservicio p {
     font-size: 50px;
-    padding: 20px;
-}
+    padding: 20px; }
 
-/*Sobre Nosotros*/
+.imginicio {
+  width: 200px; }
 
-.sobre-inicio-bg{
+.sobre-inicio-bg {
   background-image: url(/img/sobre/sobre-inicio.jpg);
   padding: 300px 70px;
   background-position: center center;
   background-size: cover;
-    text-align: center;
-}
-
-.sobre-inicio-bg:before{
-    content: '';
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(0, 0, 0,0.7);
-}
-
-.sobre-inicio-bg h2{
+  text-align: center; }
+  .sobre-inicio-bg h2 {
     display: flex;
     font-size: 60px;
     color: #f2f2f2;
@@ -128,14 +89,6 @@ header{
 
 .sobre-informacion {
   background-color: white; }
-
-.sobre-info h2{
-  display: flex;
-  justify-content: center;}
-  .sobre-info p{
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;}
 
 .info-img {
   display: flex;
@@ -156,7 +109,6 @@ header{
     padding-bottom: 150px;
     font-size: 20px; }
 
-/*Trabaja con nosotros*/
 .trabajo-inicio-bg {
   background-image: url(/img/trabajo/trabajo-inicio.jpg);
   padding: 300px 70px;
@@ -191,7 +143,6 @@ header{
     padding: 20px;
     text-align: center; }
 
-/*Servicios*/
 .servicio-inicio-bg {
   background-image: url(/img/servicio/servicio-inicio.jpg);
   padding: 300px 70px;
@@ -229,7 +180,6 @@ header{
     margin-right: 10px;
     margin-bottom: 20px; }
 
-/*Contacto*/
 .contacto-inicio-bg {
   background-image: url(/img/contacto/contacto-inicio.jpg);
   padding: 300px 70px;
@@ -260,7 +210,6 @@ header{
   border: #cccccc solid;
   margin-top: 10px; }
 
-/*Footer*/
 .footer_container {
   display: flex;
   height: 50vh;
@@ -297,7 +246,6 @@ header{
   width: 90vw;
   background-color: #f2f2f2; }
 
-/*Responsive*/
 @media (max-width: 768px) {
   .checkbtn {
     display: block; }
@@ -335,9 +283,10 @@ header{
     flex-direction: column;
     align-items: center; }
   .columns {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
   .presentaciondeservicio {
-    width: 48%; }
+    width: 47%; }
   .sobre-informacion {
     display: flex;
     align-items: center;
@@ -351,7 +300,9 @@ header{
     display: flex;
     justify-content: center; }
   .sobre-info p {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px; }
   .colums-trabajo {
     width: 30vw;
     height: 500px;
@@ -391,3 +342,5 @@ header{
     justify-content: center;
     width: 33vw;
     margin: 10px 20px 0 20px; } }
+
+/*Color base #dab727*/
