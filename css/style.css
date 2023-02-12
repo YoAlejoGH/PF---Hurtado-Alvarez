@@ -1,5 +1,15 @@
-.tienda_inmobiliaria {
-  background-color: aliceblue; }
+.tienda-inicio-bg {
+  background-image: url(/img/tienda/tienda-inicio.jpg);
+  padding: 300px 70px;
+  background-position: center center;
+  background-size: cover;
+  text-align: center; }
+  .tienda-inicio-bg h2 {
+    display: flex;
+    font-size: 60px;
+    color: #f2f2f2;
+    text-align: center;
+    justify-content: center; }
 
 * {
   padding: 0;
