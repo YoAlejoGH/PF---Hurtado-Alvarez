@@ -1,5 +1,5 @@
 console.log("Hola Mundo, esta es la tienda");
-alert("Bienvenido a la tienda, aqui podras encontrar las distintas opciones que tenemos para nuestros clientes")
+alert("Bienvenido a la tienda, aqui podras encontrar las distintas opciones que tenemos para nuestros clientes");
 
 // Variables
 const baseDeDatos = [
@@ -7,7 +7,7 @@ const baseDeDatos = [
         id: 1,
         nombre: 'Terreno en el frances',
         precio: 103000000,
-        imagen: 'TerrenoF.jpg'
+        imagen: 'terrenoElFrances.jpg'
     },
     {
         id: 2,
@@ -84,7 +84,7 @@ function renderizarProductos() {
 //Agregamos un producto al carrito
 function anyadirProductoAlCarrito(evento) {
     // Anyadimos el Nodo a nuestro carrito
-    carrito.push(evento.target.getAttribute('marcador'))
+    carrito.push(evento.target.getAttribute('marcador'));
     // Actualizamos el carrito 
     renderizarCarrito();
 
