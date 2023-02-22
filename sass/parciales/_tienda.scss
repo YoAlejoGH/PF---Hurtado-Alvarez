@@ -13,3 +13,14 @@
         justify-content: center;
     }
 }
+
+.col-sm-4{
+    display: grid;
+    width: 30%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+aside{
+    display: flex;
+}
