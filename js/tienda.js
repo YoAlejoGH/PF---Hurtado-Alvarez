@@ -1,4 +1,7 @@
-//
+console.log("Tienda");
+alert("Bienvenido a la Tienda de Inmobiliaria Hurtado");
+
+
 const btnCart = document.querySelector('.container-cart-icon')
 const containerCartProducts = document.querySelector('.container-cart-products')
 
