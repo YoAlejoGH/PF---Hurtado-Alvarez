@@ -1,13 +1,5 @@
 console.log("Tienda");
 
-//Local Storage
-
-localStorage.setItem("TerrenoFrances", 650500000, 55413)
-localStorage.setItem("AptoPoblado", 1250000000, 55613)
-localStorage.setItem("AptoLaureles", 745000000, 66598)
-localStorage.setItem("AptoCartagena", 1300000000, 25689)
-localStorage.setItem("AptoBogota", 895000000, 77896)
-
 
 const btnCart = document.querySelector('.container-cart-icon')
 const containerCartProducts = document.querySelector('.container-cart-products')
@@ -30,6 +22,7 @@ let allProducts = []
 const valorTotal = document.querySelector('.total-pagar');
 const countProducts = document.querySelector('#contador-productos');
 
+//Evento cuando le damos agregar al carrito
 
 productsList.addEventListener('click', e => {
 
@@ -63,6 +56,8 @@ productsList.addEventListener('click', e => {
     }
 
 });
+
+//Evento para eliminar producto del carrito
 
 rowProduct.addEventListener('click', (e) =>{
     if (e.target.classList.contains('icon-close')){
