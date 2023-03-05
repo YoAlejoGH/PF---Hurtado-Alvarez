@@ -164,7 +164,7 @@ header{
 /* Main */
 .container-items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     margin-top: 20px;
 }
@@ -173,6 +173,8 @@ header{
     border-radius: 10px;
     border: #bdbdbd solid 1px;
     margin-bottom: 20px;
+    display: flex;
+
 }
 
 .item:hover{
@@ -180,7 +182,7 @@ header{
 }
 
 .item img{
-    width: 100%;
+    width: 400px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
@@ -216,4 +218,5 @@ header{
     padding: 15px 10px;
     cursor: pointer;
 }
+
 

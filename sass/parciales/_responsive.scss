@@ -33,6 +33,13 @@
         left: 0;
         transition: all .25s;
     }
+
+    .container_items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    
 }
 
 @media screen and (min-width:768px){
@@ -137,6 +144,10 @@
         justify-content: center;
         width: 33vw;
         margin: 10px 20px 0 20px;
+    }
+    .container-items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
 
