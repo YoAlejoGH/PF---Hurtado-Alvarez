@@ -1,23 +1,22 @@
 console.log("Tienda");
 
-
-const btnCart = document.querySelector('.container-cart-icon')
-const containerCartProducts = document.querySelector('.container-cart-products')
+const btnCart = document.querySelector('.container-cart-icon');
+const containerCartProducts = document.querySelector('.container-cart-products');
 
 btnCart.addEventListener('click', () => {
-    containerCartProducts.classList.toggle('hidden-cart')
-})
+    containerCartProducts.classList.toggle('hidden-cart');
+});
 
-const cartInfo = document.querySelector('.cart-product')
-const rowProduct = document.querySelector('.row-product')
+const cartInfo = document.querySelector('.cart-product');
+const rowProduct = document.querySelector('.row-product');
 
 //Lista de los contenedores del producto
 
-const productsList = document.querySelector('.container-items')
+const productsList = document.querySelector('.container-items');
 
 //Variable de arreglo de productos
 
-let allProducts = []
+let allProducts = JSON.parse(localStorage.getItem("carritoStorage")) || [];
 
 const valorTotal = document.querySelector('.total-pagar');
 const countProducts = document.querySelector('#contador-productos');
@@ -49,10 +48,9 @@ productsList.addEventListener('click', e => {
         } else {
             allProducts = [...allProducts, infoProduct];
         }
-        
-        
-
+       
         showHTML();
+        saveLocal();
     }
 
 });
@@ -116,3 +114,10 @@ const showHTML = () => {
     valorTotal.innerText = `$${total}`;
     countProducts.innerText = totalOfProducts;
 }
+
+//LocalStorage
+
+const saveLocal = () => {
+    localStorage.setItem("carritoStorage", JSON.stringify(allProducts));
+}
+
