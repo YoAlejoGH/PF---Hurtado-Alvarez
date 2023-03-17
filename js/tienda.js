@@ -65,6 +65,7 @@ rowProduct.addEventListener('click', (e) =>{
         allProducts = allProducts.filter(product => product.title !== title);
 
         showHTML();
+        cleanLocal();
     }
 });
 
@@ -119,5 +120,9 @@ const showHTML = () => {
 
 const saveLocal = () => {
     localStorage.setItem("carritoStorage", JSON.stringify(allProducts));
+}
+
+const cleanLocal = () => {
+    localStorage.removeItem("carritoStorage", JSON.stringify(allProducts));
 }
 
