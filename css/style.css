@@ -242,7 +242,10 @@ header {
     justify-content: center; }
 
 .sobre-informacion {
-  background-color: white; }
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .info-img {
   display: flex;
@@ -250,7 +253,8 @@ header {
   padding: 20px; }
   .info-img img {
     display: flex;
-    width: 90vw; }
+    width: 90vw;
+    border-radius: 5px; }
   .info-img h2 {
     text-align: center;
     padding-bottom: 20px;
@@ -262,6 +266,12 @@ header {
     padding-right: 10px;
     padding-bottom: 150px;
     font-size: 20px; }
+
+.sobre-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .trabajo-inicio-bg {
   background-image: url(/img/trabajo/trabajo-inicio.jpg);
@@ -290,7 +300,11 @@ header {
 .colums-trabajo {
   border: #cecece solid;
   margin: 10px 20px;
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%; }
   .colums-trabajo img {
     width: 350px; }
   .colums-trabajo p {
@@ -321,14 +335,18 @@ header {
 .columns-servicio {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  border: 1px solid gray;
+  padding-top: 20px; }
   .columns-servicio h3 {
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: bold; }
   .columns-servicio img {
     width: 350px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border-radius: 5px; }
   .columns-servicio p {
     margin-left: 10px;
     margin-right: 10px;
@@ -359,7 +377,8 @@ header {
   width: 90vw;
   height: 120px;
   justify-content: space-between;
-  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   align-items: center;
   border: #cccccc solid;
   margin-top: 10px; }

@@ -32,6 +32,10 @@
     border: #cecece solid;
     margin: 10px 20px;
     background-color: rgb(229, 229, 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
 
     img{
         width: 350px;
