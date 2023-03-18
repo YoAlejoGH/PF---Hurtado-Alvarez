@@ -34,7 +34,7 @@
                     </ul>
                 </div>
             </header>
-			<div class="container-icon">
+			<div class="container-icon" id="mostrarCarro">
                 <div class="container-cart-icon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -93,80 +93,12 @@
 		</header>
 		<main>
 			<div class="tienda-inicio-bg">
-            <h2>Tienda</h2>
-        </div>
-		<div class="container-items">
-			<div class="item">
-				<figure>
-					<img
-						src="../img/tienda/terrenoElFrances.jfif"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Terreno El Frances</h2>
-                    <h3>Codigo: 55413</h3>
-					<p class="price">$650500000</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
+				<h2>Tienda</h2>
 			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="../img/tienda/aptoElPoblado.jpg"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Apto El Poblado</h2>
-                    <h3>Codigo: 55613</h3>
-					<p class="price">$1250000000</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
+			<div class="items-container" id="itemsContainer"></div>
+			<div class="carritoContenido">
+			<div id="carritoContenedor" class="carrito-contenedor"></div>
 			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="../img/tienda/aptoLaureles.jpg"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Apto Laureles</h2>
-                    <h3>Codigo: 66598</h3>
-					<p class="price">$745000000</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="../img/tienda/aptoCartagena.jfif"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Apto Cartagena</h2>
-                    <h3>Codigo: 25698</h3>
-					<p class="price">$1300000000</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="../img/tienda/aptoBogota.jfif"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Apto Bogota</h2>
-                    <h3>Codigo: 77869</h3>
-					<p class="price">$895000000</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
-			</div>
-		</div>
 		</main>
 		<footer>
         <div class="footer_container">
@@ -182,8 +114,10 @@
                
             </div>
         </div>
-    </footer>
+    	</footer>
 
+		<script src="../js/items.js"></script>
+		<script src="../js/carrito.js"></script>
         <script src="../js/tienda.js"></script>
 		<script src="../js/localStorageTienda.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

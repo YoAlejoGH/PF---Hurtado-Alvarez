@@ -145,9 +145,14 @@
         width: 33vw;
         margin: 10px 20px 0 20px;
     }
-    .container-items{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    
+    .items-container{
+        display: flex;
+    }
+
+    .tarjetaItem{
+        margin: 10px 20px 10px 20px;
+        width: 40%;
     }
 
 
