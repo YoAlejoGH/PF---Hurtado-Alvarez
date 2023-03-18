@@ -31,8 +31,16 @@ const pintarCarrito = () => {
             <div class="precio-item">
                 <p>$${item.precio}</p>
             </div>
+            <div class="cantidad-item">
+                <p>Cantidad: ${item.cantidad}</p>
+            </div>
+            <div class="total-item">
+                <p>Total: ${item.cantidad * item.precio}</p>
+            </div>
         `;
         carritoContenido.append(contenidoCarrito);
+
+        console.log(carrito.length);
 
         //Creo la x del eliminar item
         let eliminarItem = document.createElement("span");
@@ -46,7 +54,7 @@ const pintarCarrito = () => {
     //Footer carrito
 
     //Creamos el calculador de la suma de los precios con un acumulador
-    const totalPrecio = carrito.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+    const totalPrecio = carrito.reduce((acumulador, producto) => acumulador + producto.precio * producto.cantidad, 0);
     const totalCompra = document.createElement("div");
     totalCompra.className = "total-contenedor";
     totalCompra.innerHTML = `Total a pagar: $ ${totalPrecio}`;
@@ -69,4 +77,10 @@ const elimiarItemCarrito = () => {
     });
 
     pintarCarrito();
+    carritoContador();
 };
+
+const carritoContador = () => {
+    cantidadItemsCarrito.style.display = "flex";
+    contadorProductos.innerText = carrito.length;
+}

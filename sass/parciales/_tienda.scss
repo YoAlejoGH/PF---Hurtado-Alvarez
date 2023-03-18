@@ -71,95 +71,13 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    display: none;
 }
 
 #contador-productos{
     font-size: 12px;
     color: #000;
 }
-
-.container-cart-products{
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: #fff;
-    width: 400px;
-    z-index: 1;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-    border-radius: 10px;
-    
-}
-
-.cart-product{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
-}
-
-.info-cart-product{
-    display: flex;
-    justify-content: space-between;
-    flex: 0.8;
-}
-
-.titulo-producto-carrito{
-    font-size: 20px;
-    color: #000;
-}
-
-.precio-producto-carrito{
-    font-weight: 700;
-    font-size: 20px;
-    margin-left: 10px;
-    color: #000;
-}
-
-.cantidad-producto-carrito{
-    font-weight: 400;
-    font-size: 20px;
-    color: #000;
-    font-family:'Lato';
-
-}
-
-.icon-close{
-    width: 25px;
-    height: 25px;
-    color: #000;
-}
-
-.icon-close:hover{
-    stroke: red;
-    cursor: pointer;
-}
-
-.cart-total{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
-
-    h3{
-        font-size: 20px;
-        font-weight: 700;
-        color: #000;
-    }
-}
-
-.total-pagar{
-    font-size: 20px;
-    font-weight: 900;
-    color: #000;
-}
-
-.hidden-cart{
-    display: none;
-}
-
 
 /* Main */
 
@@ -249,8 +167,8 @@ main{
         color: white;
         display: flex;
         justify-content: space-between;
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
 
         .nombre-item{
             font-size: 30px;

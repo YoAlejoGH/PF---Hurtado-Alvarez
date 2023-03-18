@@ -5,6 +5,8 @@
 const itemsContainer = document.getElementById("itemsContainer");
 const mostrarCarro = document.getElementById("mostrarCarro");
 const carritoContenido = document.getElementById("carritoContenedor");
+const cantidadItemsCarrito = document.getElementById("carritoContador");
+const contadorProductos = document.getElementById("contador-productos");
 
 //Array de carrito
 
@@ -19,6 +21,7 @@ items.forEach((item) => {
         <img src="${item.img}">
         <h3>${item.nombre}</h3>
         <p class="precio">$${item.precio}</p>
+        <p>Cantidad: ${item.cantidad}</p>
     `;
 
     itemsContainer.append(contenido);
@@ -34,12 +37,26 @@ items.forEach((item) => {
     //Eventos
 
     comprar.addEventListener("click", () => {
-        carrito.push({
+
+        //Constante que me busque si al dar click el ID sea igual, el some me devuelve un true o false
+        const repito = carrito.some((repitoItem) => repitoItem.id === item.id);
+
+        if (repito === true){
+            carrito.map((prod) => {
+                if(prod.id === item.id){
+                    prod.cantidad++;
+                }
+            });
+        } else {
+            carrito.push({
             id : item.id,
             nombre: item.nombre,
             precio: item.precio,
+            cantidad: item.cantidad,
         });
+        };
         console.log(carrito);
+        carritoContador();
     });
 });
 
