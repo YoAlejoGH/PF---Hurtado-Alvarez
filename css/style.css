@@ -462,7 +462,8 @@ header {
     display: flex;
     flex-wrap: wrap; }
   .presentaciondeservicio {
-    width: 47%; }
+    width: 47%;
+    border-radius: 5px; }
   .sobre-informacion {
     display: flex;
     align-items: center;
@@ -495,13 +496,14 @@ header {
   .servicio-info {
     display: flex; }
     .servicio-info h2 {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-weight: bold; }
   .columns-servicio {
     display: flex;
-    align-items: stretch;
     flex-direction: row;
     border: #c9c9c9 solid;
-    margin: 20px; }
+    margin: 20px;
+    padding: 10px; }
     .columns-servicio img {
       width: 150px;
       margin: 0; }
@@ -515,14 +517,20 @@ header {
     justify-content: center; }
   .contacto-info {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 33vw;
     margin: 10px 20px 0 20px; }
   .items-container {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
   .tarjetaItem {
     margin: 10px 20px 10px 20px;
-    width: 40%; }
+    width: 40%;
+    justify-content: space-evenly; }
+    .tarjetaItem img {
+      height: 50%;
+      width: 95%; }
   .carritoContenido {
     width: 80%; }
     .carritoContenido .header-carrito {

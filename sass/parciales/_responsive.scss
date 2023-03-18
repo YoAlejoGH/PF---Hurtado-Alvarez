@@ -57,6 +57,7 @@
 
     .presentaciondeservicio{
         width: 47%;
+        border-radius: 5px;
     }
 
     .sobre-informacion{
@@ -111,15 +112,16 @@
 
         h2{
             margin-bottom: 20px;
+            font-weight: bold;
         }
     }
 
     .columns-servicio{
         display: flex;
-        align-items: stretch;
         flex-direction: row;
         border: rgb(201, 201, 201) solid;
         margin: 20px;
+        padding: 10px;
 
         img{
             width: 150px;
@@ -141,18 +143,26 @@
 
     .contacto-info{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 33vw;
         margin: 10px 20px 0 20px;
     }
     
     .items-container{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .tarjetaItem{
         margin: 10px 20px 10px 20px;
         width: 40%;
+        justify-content: space-evenly;
+
+        img{
+            height: 50%;
+            width: 95%;
+        }
     }
 
     .carritoContenido{
