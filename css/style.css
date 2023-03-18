@@ -149,6 +149,12 @@ main {
   .carrito-contenedor .eliminar-item {
     cursor: pointer; }
 
+.sumar {
+  cursor: pointer; }
+
+.restar {
+  cursor: pointer; }
+
 * {
   padding: 0;
   margin: 0;
@@ -497,6 +503,15 @@ header {
     display: flex; }
   .tarjetaItem {
     margin: 10px 20px 10px 20px;
-    width: 40%; } }
+    width: 40%; }
+  .carritoContenido {
+    width: 80%; }
+    .carritoContenido .header-carrito {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+    .carritoContenido .contenido-carrito {
+      display: flex;
+      justify-content: space-evenly; } }
 
 /*Color base #dab727*/

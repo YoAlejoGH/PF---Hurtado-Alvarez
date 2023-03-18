@@ -31,16 +31,38 @@ const pintarCarrito = () => {
             <div class="precio-item">
                 <p>$${item.precio}</p>
             </div>
+            <span class="restar"> - </span>
             <div class="cantidad-item">
                 <p>Cantidad: ${item.cantidad}</p>
             </div>
+            <span class="sumar"> + </span>
             <div class="total-item">
                 <p>Total: ${item.cantidad * item.precio}</p>
             </div>
         `;
         carritoContenido.append(contenidoCarrito);
 
-        console.log(carrito.length);
+        //Les creo una variable a suamr y restar
+        let restar = contenidoCarrito.querySelector(".restar");
+        let sumar = contenidoCarrito.querySelector(".sumar");
+
+        restar.addEventListener("click", () => {
+            if(item.cantidad !== 1){
+                item.cantidad --;
+                pintarCarrito();
+                guardoLocal();
+            }
+        });
+        sumar.addEventListener("click", () => {
+            if(item.cantidad < sumar){
+                item.cantidad ++;
+                pintarCarrito();
+                guardoLocal();
+            } else {
+                alert("No hay mas productos");
+            };
+            
+        });
 
         //Creo la x del eliminar item
         let eliminarItem = document.createElement("span");
@@ -76,11 +98,21 @@ const elimiarItemCarrito = () => {
         return carritoId !== encontrarID;
     });
 
-    pintarCarrito();
     carritoContador();
+    guardoLocal();
+    pintarCarrito();
 };
 
 const carritoContador = () => {
     cantidadItemsCarrito.style.display = "flex";
+
+    const carritoLength = carrito.length;
+
+    localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
+
     contadorProductos.innerText = carrito.length;
-}
+
+    cantidadItemsCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
+};
+
+carritoContador();

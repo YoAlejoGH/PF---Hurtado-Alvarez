@@ -155,5 +155,18 @@
         width: 40%;
     }
 
+    .carritoContenido{
+        width: 80%;
+
+        .header-carrito{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .contenido-carrito{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
 
 }

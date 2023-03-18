@@ -10,7 +10,7 @@ const contadorProductos = document.getElementById("contador-productos");
 
 //Array de carrito
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carritoStorage")) || [];
 
 //Creo las tarjetas que contienen los elementos
 
@@ -57,6 +57,15 @@ items.forEach((item) => {
         };
         console.log(carrito);
         carritoContador();
+        guardoLocal();
     });
 });
+
+//LocalStorage
+
+//SetItem para guardar los strings del carrito
+
+const guardoLocal = () => {
+localStorage.setItem("carritoStorage", JSON.stringify(carrito));
+};
 
