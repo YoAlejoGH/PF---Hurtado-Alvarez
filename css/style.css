@@ -19,7 +19,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
+.bodyStore {
   margin: 0;
   color: #333; }
 
@@ -67,7 +67,7 @@ header {
   color: #000; }
 
 /* Main */
-main {
+.mainStore {
   background-color: #333; }
 
 .items-container {
