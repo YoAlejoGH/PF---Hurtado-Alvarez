@@ -41,20 +41,14 @@ items.forEach((item) => {
         //Constante que me busque si al dar click el ID sea igual, el some me devuelve un true o false
         const repito = carrito.some((repitoItem) => repitoItem.id === item.id);
 
-        if (repito === true){
-            carrito.map((prod) => {
-                if(prod.id === item.id){
-                    prod.cantidad++;
-                }
-            });
-        } else {
-            carrito.push({
-            id : item.id,
+        repito === true ? carrito.map((prod) => {
+            prod.id === item.id && prod.cantidad++;
+        }) : carrito.push({
+            id: item.id,
             nombre: item.nombre,
             precio: item.precio,
             cantidad: item.cantidad,
         });
-        };
         console.log(carrito);
         carritoContador();
         guardoLocal();
