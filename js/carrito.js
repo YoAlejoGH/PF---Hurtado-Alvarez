@@ -57,10 +57,7 @@ const pintarCarrito = () => {
                 item.cantidad ++;
                 pintarCarrito();
                 guardoLocal();
-            } else {
-                alert("No hay mas productos");
-            };
-            
+            }
         });
 
         //Creo la x del eliminar item
