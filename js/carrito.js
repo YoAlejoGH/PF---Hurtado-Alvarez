@@ -47,11 +47,10 @@ const pintarCarrito = () => {
         let sumar = contenidoCarrito.querySelector(".sumar");
 
         restar.addEventListener("click", () => {
-            if(item.cantidad !== 1){
-                item.cantidad --;
+            item.cantidad !== 1 && 
+                item.cantidad--;
                 pintarCarrito();
                 guardoLocal();
-            }
         });
         sumar.addEventListener("click", () => {
             if(item.cantidad < sumar){
