@@ -69,8 +69,6 @@ const pintarCarrito = () => {
         eliminarItem.addEventListener("click", elimiarItemCarrito);
     });
 
-    //Footer carrito
-
     //Creamos el calculador de la suma de los precios con un acumulador
     const totalPrecio = carrito.reduce((acumulador, producto) => acumulador + producto.precio * producto.cantidad, 0);
     const totalCompra = document.createElement("div");
